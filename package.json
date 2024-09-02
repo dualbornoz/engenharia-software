@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": "http://localhost:5174",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
@@ -13,13 +14,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^9.0.1",
     "@prisma/client": "^5.17.0",
-    "fastify": "^4.28.1"
+    "fastify": "^4.28.1",
+    "fastify-cors": "^6.0.3",
+    "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",
-    "prisma": "^5.17.0",
+    "install": "^0.13.0",
+    "prisma": "^5.18.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.16.5",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescriptnpm": "^1.0.1"
   }
 }
